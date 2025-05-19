@@ -1,0 +1,330 @@
+/* utility classes for testing */
+/* .border-blue {
+    border: 1px dotted blue;
+}
+.border-red {
+    border: 1px dotted red;
+}
+.border-green {
+    border: 1px dotted green;
+} */
+
+/* Main Styling begins here*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    margin: auto;
+    text-align: center;
+}
+
+/* Part 1: Logo and everything beside it */
+.container-part1 {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.header1 {
+    margin: 3.2rem 0 4rem 8rem;
+    align-self: flex-start;
+}
+
+.header2 {
+    align-content: space-between;
+    margin: 0 4rem 0 0;
+}
+
+.header2-line1,
+.header2-line2,
+.header2-line3 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.header2-line1 {
+    margin: 0 0 0 2.6rem; 
+}    
+
+.header2-line1 ul{
+    list-style-type: none;
+}
+
+.header2-line1 li {
+    float: left;
+    padding: 0.3rem;
+}
+
+.header2-line2 {
+    align-items: center;
+    align-self: baseline;
+    justify-content: flex-start;
+    text-align: left;
+    margin: 1.5rem 0 1rem 0;
+}
+
+.header2-line2-mart, 
+.header2-line2-portal,
+.header2-line2-search,
+.header2-line2-youtube { 
+    margin: 0 8.8rem 1rem 0;   
+}
+
+/* .header2-line2-search input {
+    color:#939b96;
+    font-family: "Muli", sans-serif;
+    font-size: 1rem;
+    padding: 0.6rem ;
+    border: 1px solid #e6dddd;
+    border-radius: 0.4rem 0 0 0.4rem;
+}
+.header2-line2-search button {
+    background: #e6dddd;
+    color: #514e4e99;
+    border: none;
+    border-radius: 0 0.4rem 0.4rem 0;
+    font-family: "Roboto", sans-serif;
+    font-size: 1.8rem;
+} */
+
+.header2-line3 {
+    align-items: flex-end;
+    justify-content: flex-start;
+}
+
+/* Styling for links on line 1: TETFUND...*/
+.header2-line1 a {
+    font-family: "Muli", sans-serif;
+    font-size: 0.75rem;
+    font-weight: 800;
+    color: #096c3a;
+    text-decoration: none;
+}
+
+.header2-line1 a:hover {
+    color: #939b96;
+    text-decoration: underline;
+}
+
+.header2-line1 ul li a:active {
+    border-color: #252525;
+    text-decoration: underline;
+}
+
+/* Styling for links on line 2 & 3: Youtube... */
+.header2-line2-youtube a,
+.header2-line2-mart a {
+    font-family: "Roboto", sans-serif;
+    font-size: 1.25rem;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.header2-line2-youtube a {
+    color: #f62b04;
+}
+
+.header2-line2-mart a {
+    color: #058521;
+}
+
+.header2-line3 a {
+    color: #6ec1e4;
+    font-family: "Roboto", sans-serif;
+    font-size: 1.813rem;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.header2-line2-youtube a:hover,
+.header2-line2-mart a:hover,
+.header2-line3 a:hover {
+    color: #939b96;
+    text-decoration: underline;
+}
+
+/* PART 2: Nav-bar */
+.container-part2,
+.nav-bar ul,
+.nav-bar li {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    font-family: "Muli", sans-serif;
+    font-size: 1.125rem; 
+    justify-content: center;
+}
+
+.container-part2 {
+    background: #096c3a;
+    line-height: 1.8;
+    position: sticky;
+    top: 0;
+}
+
+.nav-bar ul{
+    flex-direction: row;
+    list-style-type: none;
+}
+
+.nav-bar li {
+    float: left;
+    padding: 0rem 0.58rem; 
+}
+
+/* Style for links in Part 2 */
+.nav-bar a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.nav-bar a:hover {
+    color: #939b96;
+    text-decoration: underline;
+}
+
+/* PART 3: Image */
+.container-part3 img{
+    width: 80%;
+    height: auto;
+}
+
+/* PART 4: Events and News */
+.container-part4 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.container-part4 img {
+    width: 100%;
+    height: auto;
+}
+
+.latest-events-header,
+.latest-news-header {
+    align-content: flex-start;
+    display: flex;
+    font-family: "Muli", sans-serif;
+    justify-content: flex-start;
+    margin: 0 0 0 2rem;
+}
+
+.latest-events-content {
+    column-gap: 2rem;
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 1fr;
+    max-width: fit-content;
+    margin: 0 0 0 2rem;
+    vertical-align: baseline;
+}
+
+.latest-events-content a{
+    color: #444444;
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.25rem;
+    text-decoration: none;
+}
+
+.latest-events-content a:hover,
+.latest-news-content a:hover {
+    color: #939b96;
+    text-decoration: underline;
+}
+
+.latest-news-content a{
+    color: #54595f;
+    display: flex;
+    font-family: "Muli", sans-serif;
+    font-size: 15px;
+    text-decoration: none;
+    justify-content: start;
+    margin: 0 0 0 2rem;
+}
+
+/* PART 5: General Info... */
+.container-part5 {
+    align-items: center;
+    background: #23a455;
+    color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-family: "Muli", sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    justify-content: space-around;
+    height: 5rem;
+}
+
+.part5-box1,
+.part5-box2,
+.part5-box3 {
+    border: 0.1rem solid #ffffff;
+    border-radius: 0.5rem;
+    padding: 0.625rem 1.563rem;
+}
+
+/* Part 6: Discover */
+.container-part6 {
+    align-content: flex-start;
+    color: #484848;
+    display: flex;
+    flex-wrap: wrap;
+    font-family: "Merriweather Sans", sans-serif;
+    font-size: 1.125rem;
+    margin: 0 0 0 2.3rem;
+}
+
+/* Part 7: Admissions... */
+.container-part7 {
+    column-gap: 0.5rem;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    margin: 0 2rem;
+}
+
+.container-part7 img {
+    width: 100%;
+    height: auto;
+}
+
+.container-part7 a {
+    text-decoration: none;
+}
+
+.container-part7 a:hover {
+    color: #939b96;
+    text-decoration: underline;
+}
+
+.part7-box1-header,
+.part7-otherheaders {
+    color: #484848;
+    font-family: "Muli", sans-serif;
+    font-weight: 600;
+}
+
+.part7-box1-header {
+    font-size: 1.063rem;
+}
+
+.part7-otherheaders {
+    font-size: 1rem;
+}
+
+.part7-body {
+    color: #484848;
+    font-family: "Muli", sans-serif;
+    font-size: 0.875rem;
+    font-weight: bold;
+}
