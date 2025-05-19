@@ -1,5 +1,5 @@
 /* utility classes for testing */
-/* .border-blue {
+.border-blue {
     border: 1px dotted blue;
 }
 .border-red {
@@ -7,7 +7,7 @@
 }
 .border-green {
     border: 1px dotted green;
-} */
+}
 
 /* Main Styling begins here*/
 *,
@@ -242,13 +242,54 @@ body {
 }
 
 .latest-news-content a{
+    border-bottom: 0.1rem solid #e6dddd;
     color: #54595f;
     display: flex;
     font-family: "Muli", sans-serif;
     font-size: 15px;
-    text-decoration: none;
     justify-content: start;
+    line-height: 1.5;
     margin: 0 0 0 2rem;
+    padding: 0 0 1rem 0;
+    text-decoration: none;
+}
+
+.latest-events-header-1,
+.latest-news-header-1 {
+    color: #484848;
+    font-size: 0.938rem;
+    margin: 0 0.7rem 0 0;
+}
+
+.latest-events-header-1:hover,
+.latest-news-header-1:hover{
+    color: #939b96;
+    text-decoration: underline;
+}
+
+.latest-events-header-2,
+.latest-news-header-2 {
+    color: #214295;
+    font-size: 1.063rem;
+}
+
+.latest-events-header-2:hover,
+.latest-news-header-2:hover {
+    color: #939b96
+}
+
+.latest-events-header-1,
+.latest-news-header-1,
+.latest-events-header-2,
+.latest-news-header-2 {
+    text-decoration: none;
+}
+
+.box-extracontent {
+    color: #4a4a4a;
+    font-family: "Open Sans", sans-serif;
+    font-size: 0.875rem;
+    font-weight: 0;
 }
 
 /* PART 5: General Info... */
@@ -291,6 +332,7 @@ body {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     margin: 0 2rem;
+    text-align: left;
 }
 
 .container-part7 img {
@@ -327,4 +369,81 @@ body {
     font-family: "Muli", sans-serif;
     font-size: 0.875rem;
     font-weight: bold;
+}
+
+/* Part 8: Footer */
+.container-part8 {
+    background: #096c3a;
+    display: grid;
+    font-weight: 600;
+    gap: 2rem;
+    grid-auto-flow: column;
+    grid-auto-columns: 1fr;
+    grid-template-columns: repeat (auto-fit, minmax(10rem, 25rem));
+    text-align: left;
+}
+
+.container-part8 a {
+    color: #cee2d8;
+    line-height: 1.5;
+    margin: 0 1.2rem 0 0;
+    text-decoration: none;
+}
+
+.container-part8 a:hover {
+    color: #939b96;
+    text-decoration: underline;
+}
+
+.container-part8 h4 {
+    font-size: 0.938rem;
+}
+
+.contact-faqs {
+    font-family: "Roboto", sans-serif;
+    font-size: 0.875rem;
+    font-weight: lighter;
+}
+
+.contact-faqs a:hover {
+    text-decoration: underline;
+}
+
+.footer-column1,
+.footer-column2,
+.footer-column3,
+.footer-column4 {
+    color: #ecf3f0;
+    font-family: "Muli", sans-serif;
+    margin: 0 0 0 1.5rem;
+}
+
+.unn-png {
+    margin: 0.8rem 0 0 0;
+}
+
+.connect-with-us {
+    color: #ecf3f0;
+    font-size: 1.125rem;
+    font-weight: 800;
+    line-height: 2;
+}
+
+.tenece {
+    font-size: 0.875rem;
+}
+
+.affiliate {
+    width: auto;
+    height: 5%;
+}
+
+.copyright {
+    color: #a3c7b5;
+    font-size: 1rem;
+}
+
+.after-copyright {
+    color: #a3c7b5;
+    font-size: 0.875rem;
 }
